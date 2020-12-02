@@ -7,6 +7,34 @@ Compliments Results
 {% block content %}
 
 <!-- Your HTML code goes here! -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Compliments Results</title>
+</head>
+
+<body>
+
+
+
+    Hello {{name}} you selected {{cool_comp}}
+    {% if cool_comp == 'yes' %}
+    <ul>
+        {% for i in compliments %}
+
+        <li>
+            {{i}}
+        </li>
+
+        {% endfor %}
+    </ul>
+    {%  else %}
+    <p>No compliments </p>
+    {% endif %}
+</body>
+
+</html>
 
 
 
